@@ -23,4 +23,8 @@ export class CardComponent implements OnInit{
             this.imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9nrhIyRoO1jeci1MMFbs2ACP0uTW_6kNrlA&usqp=CAU'
         }, 3000)
     }
+
+    changeTitle(){
+        this.title = 'New Title'
+    }
 }
