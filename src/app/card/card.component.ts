@@ -15,4 +15,6 @@ export class CardComponent{
     getJob(){
         return this.obj.info.job;
     }
+
+    imgUrl: string = 'https://angular.io/assets/images/logos/angular/angular.png'
 }
