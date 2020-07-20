@@ -12,4 +12,7 @@ export class CardComponent{
 
     obj = {name: "Ivan", info: {age: 21, job: 'Fullstack'}}
 
+    getJob(){
+        return this.obj.info.job;
+    }
 }
