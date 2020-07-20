@@ -6,8 +6,11 @@
     <div>
         <img [src]='imgUrl'>
     </div>
-    <div>
+    <div class="buttons">
         <button (click)="changeTitle()">Change title</button>
         <button (click)="title = 'Very new title'">Change title</button>
+    </div>
+    <div>
+        <input type="text" (input) = "inputHandler($event)">
     </div>
 </div>
