@@ -10,4 +10,6 @@ export class CardComponent{
 
     title = "Title variable"
 
+    obj = {name: "Ivan", info: {age: 21, job: 'Fullstack'}}
+
 }
