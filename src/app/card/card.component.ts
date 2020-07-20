@@ -1,4 +1,4 @@
-import {Component} from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 
 @Component({
     selector: 'app-card',
@@ -6,7 +6,7 @@ import {Component} from '@angular/core'
     styleUrls: ['./card.component.scss']
 })
 
-export class CardComponent{
+export class CardComponent implements OnInit{
 
     title = "Title variable"
 
@@ -17,4 +17,10 @@ export class CardComponent{
     }
 
     imgUrl: string = 'https://angular.io/assets/images/logos/angular/angular.png'
+
+    ngOnInit() {
+        setTimeout(()=>{
+            this.imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9nrhIyRoO1jeci1MMFbs2ACP0uTW_6kNrlA&usqp=CAU'
+        }, 3000)
+    }
 }
