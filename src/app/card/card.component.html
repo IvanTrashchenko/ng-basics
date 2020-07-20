@@ -11,6 +11,6 @@
         <button (click)="title = 'Very new title'">Change title</button>
     </div>
     <div>
-        <input type="text" (input) = "inputHandler($event)">
+        <input type="text" (input) = "inputHandler($event)" [value]="title">
     </div>
 </div>
