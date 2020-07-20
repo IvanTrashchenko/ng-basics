@@ -10,7 +10,10 @@
         <button (click)="changeTitle()">Change title</button>
         <button (click)="title = 'Very new title'">Change title</button>
     </div>
-    <div>
+    <!--<div>
         <input type="text" #myInput (input) = "myInput.value" [value]="title">
+    </div>!-->
+    <div>
+        <input type="text" [(ngModel)]="title">
     </div>
 </div>
