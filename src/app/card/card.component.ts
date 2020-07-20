@@ -28,8 +28,8 @@ export class CardComponent implements OnInit{
         this.title = 'New Title'
     }
 
-    inputHandler(event: any){
-        const value = event.target.value
+    inputHandler(value){
+        //const value = event.target.value
         this.title = value
     }
 }
