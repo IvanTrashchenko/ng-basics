@@ -31,4 +31,8 @@
     <div>
         <input type="text" [(ngModel)]="card.title">
     </div>
+
+    <div>
+        <strong>{{cardDate | date: 'mediumTime':null:'ru'}}</strong>
+    </div>
 </div>

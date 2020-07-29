@@ -13,6 +13,8 @@ export class CardComponent implements OnInit{
 
     @Input() index: number
 
+    cardDate: Date = new Date()
+
     obj = {name: "Ivan", info: {age: 21, job: 'Fullstack'}}
 
     getJob(){
