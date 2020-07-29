@@ -1,16 +1,16 @@
 <div class="card">
     <h2 [ngStyle]="{
-        color: title.length < 15 ? 'black' : 'red'
-    }">{{title}}</h2>
+        color: card.title.length < 15 ? 'black' : 'red'
+    }">{{card.title}}</h2>
     <!--<p class="text" [ngClass]="{
         blue: textColor === 'blue',
         green: textColor === 'green',
         red: textColor === 'red'
-    }">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?</p>!-->
+    }">{{card.text}}</p>!-->
     <p class="text" 
     [class.blue]="textColor === 'blue'"
     [class.green]="textColor === 'green'"
-    [class.red]="textColor === 'red'">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?</p>
+    [class.red]="textColor === 'red'">{{card.text}}</p>
     <pre>{{obj | json}}</pre>
     <p>{{getJob()}}</p>
     <div>
@@ -23,12 +23,12 @@
     </div>
     <div class="buttons">
         <button (click)="changeTitle()">Change title</button>
-        <button (click)="title = 'Very new title'">Change title</button>
+        <button (click)="card.title = 'Very new title'">Change title</button>
     </div>
     <!--<div>
-        <input type="text" #myInput (input) = "myInput.value" [value]="title">
+        <input type="text" #myInput (input) = "myInput.value" [value]="card.title">
     </div>!-->
     <div>
-        <input type="text" [(ngModel)]="title">
+        <input type="text" [(ngModel)]="card.title">
     </div>
 </div>
