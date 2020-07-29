@@ -32,4 +32,9 @@ export class CardComponent implements OnInit{
         //const value = event.target.value
         this.title = value
     }
+
+    textColor: string
+
+    
+
 }

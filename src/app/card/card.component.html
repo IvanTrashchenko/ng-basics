@@ -2,11 +2,20 @@
     <h2 [ngStyle]="{
         color: title.length < 15 ? 'black' : 'red'
     }">{{title}}</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?</p>
+    <p class="text" [ngClass]="{
+        blue: textColor === 'blue',
+        green: textColor === 'green',
+        red: textColor === 'red'
+    }">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?</p>
     <pre>{{obj | json}}</pre>
     <p>{{getJob()}}</p>
     <div>
         <img [src]='imgUrl'>
+    </div>
+    <div class="buttons">
+        <button (click)="textColor = 'blue'">Set blue</button>
+        <button (click)="textColor = 'green'">Set green</button>
+        <button (click)="textColor = 'red'">Set red</button>
     </div>
     <div class="buttons">
         <button (click)="changeTitle()">Change title</button>
