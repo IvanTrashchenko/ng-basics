@@ -11,6 +11,8 @@ export class CardComponent implements OnInit{
 
     @Input() card: Card
 
+    @Input() index: number
+
     obj = {name: "Ivan", info: {age: 21, job: 'Fullstack'}}
 
     getJob(){

@@ -14,9 +14,9 @@ export class AppComponent {
   toggle = true
 
   cards: Card[] = [
-    {title: 'Card 1', text: '1: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'},
-    {title: 'Card 2', text: '2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'},
-    {title: 'Card 3', text: '3: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'}
+    {title: 'Card 1', text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'},
+    {title: 'Card 2', text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'},
+    {title: 'Card 3', text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt?'}
   ]
 
   toggleCards(){
